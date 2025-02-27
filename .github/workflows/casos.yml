@@ -28,6 +28,3 @@ jobs:
       run: |
         mvn test -Dtest=net.PPE.Runners.LogRunner || true
         mvn test -Dtest=net.PPE.Runners.ActivateRunner || true
-
-    - name: dependencias
-      run: mvndependency:resolve -DoutputFile=dependencies.json -DoutputType=json
