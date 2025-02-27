@@ -26,8 +26,8 @@ jobs:
 
     - name: ejecutar pruebas
       run: |
-        mvn test -Dtest=java/net/PPE.Runners.LogRunner || true
-        mvn test -Dtest=java/net/PPE.Runners.ActivateRunner || true
+        mvn test -Dtest=net.orangehrmlive.Runners.LogRunner || true
+        mvn test -Dtest=net.orangehrmlive.Runners.MenuRunner || true
 
     - name: dependencias
       run: mvndependency:resolve -DoutputFile=dependencies.json -DoutputType=json
